@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Página de Exemplo</title>
+</head>
+<body>
+
+<header>
+    <h1>Inscrição</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="programacao.html">Programação</a>
+        <a href="palestrantes.html">Palestrantes</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
+
+<main class = "bodyform">
+    <form action="/login" method="POST">
+        <h2>Formulário de Inscrição</h2>
+
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <div class="radio-group">
+            <p>Opções de Ingresso:</p>
+            <input type="radio" id="portao1" name="ingresso" value="portao1" required>
+            <label for="portao1">Portão 1</label><br>
+
+            <input type="radio" id="portao2" name="ingresso" value="portao2" required>
+            <label for="portao2">Portão 2</label><br>
+
+            <input type="radio" id="portao3" name="ingresso" value="portao3" required>
+            <label for="portao3">Portão 3</label>
+        </div>
+
+        <button type="submit">Entrar</button>
+    </form>
+</main>
+
+<footer>
+    <p>Informações de Contato: kauanngt@gmai.com | Telefone: (11) 1234-5678</p>
+</footer>
+
+</body>
+</html>
